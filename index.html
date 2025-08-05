@@ -22,28 +22,30 @@
                     class="w-135 placeholder-gray-600 px-12 text-2xl italic border border-transparent focus:border-[#B22222] focus:shadow-[0_0_8px_#B22222] focus:outline-none transition-all duration-200"
                     type="text" placeholder="What needs to be done?">
 
-                    <!-- dropdown box to filter todos -->
-                     <div class="flex justify-center w-full">
-                        <select id="todoFilter" class="border border-gray-300 rounded-md px-4 py-2 text-lg">
-                            <option value="all">All</option>
-                            <option value="active">Active</option>
-                            <option value="completed">Completed</option>
-                        </select>
-                     </div>
-                     
-                     <!-- container Active and completed items -->
-                      <div class="todo-list-container"> 
-                        <div class="todo-list"></div>
-                        <div class="completed-list"></div>
-                      </div>
+                    
+               <!-- div to store todo lists -->
+                <div class="todo_lists_container">
+                    <ul id="allTasks" class="todo_lists mb-4"></ul>
+                    <ul id="activeTasks" class="todo_lists mb-4"></ul>
+                    <ul id="completedTasks" class="todo_lists"></ul>
+                </div>
 
-            </div>
+
+         </div>
+
+          <!-- filter todos -->
+                 <div class="flex bg-white h-11 w-135 absolute top-53 py-2 px-2 justify-center gap-2">
+                    <button id="btn_all" class="px-2 py-1 border flex items-center justify-center border-transparent hover:border-[#B22222] focus:border-[#B22222] focus:shadow-[0_0_8px_#B22222] focus:transition-all duration-200">All</button>
+                     <button id="btn_active" class="px-2 py-1 border border-red-600 flex items-center justify-center border-transparent hover:border-[#B22222] focus:border-[#B22222] focus:shadow-[0_0_8px_#B22222] focus:transition-all duration-200">Active</button>
+                     <button id="btn_completed" class="px-2 py-1 border border-red-600 flex items-center justify-center border-transparent hover:border-[#B22222] focus:border-[#B22222] focus:shadow-[0_0_8px_#B22222] focus:transition-all duration-200">Completed</button>
+                 </div>
+
             <!-- footer -->
              <div class="flex flex-col absolute top-70 w-full items-center justify-center text-sm text-gray-700 gap-1">
                 <P>Double click to edit a todo</P>
                 <p>Created by the TodoMVC Team</p>
                 <p>Part of TodoMVC</p>
-             </div>
+        </div>
         </div>
         <script src="script.js"></script>
     </div>
