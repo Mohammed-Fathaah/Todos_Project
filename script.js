@@ -1,5 +1,6 @@
 const todoInput=document.getElementById(`todoInput`);
 const todoFilter=document.getElementById(`todoFilter`);
+const todoListsContainer=document.getElementById(`todo_lists_container`);
 const allTasks=document.getElementById(`allTasks`);
 const activeTasks=document.getElementById(`activeTasks`);
 const completedTasks=document.getElementById(`completedTasks`);
@@ -28,5 +29,6 @@ function addTodo(todoText){
     //append the new items to the all section and active section
     allTasks.appendChild(todoItem);
     activeTasks.appendChild(todoItem);
-    
+
+
 }
